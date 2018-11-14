@@ -25,7 +25,27 @@ async def on_message(message):
     if ('frick') in message.content:
        await client.delete_message(message)
     if message.content.startswith('!d20'):
-        randomlist = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20',]
+        randomlist = ['1','2','3','4','5','6','7','8'.'9'.'10'.'11'.'12','13','14','15','16','17','18','19','20',]
         await client.send_message(message.channel,(random.choice(randomlist)))
 
-client.run('NTEyMDk2ODIzNzIxMzI4NjUw.Ds4t0g.6QwYHlZ9EGKAq8xN61WNGExyyHE')
+
+
+      
+       
+    if message.content.startswith('!d12'):
+        randomlist = ['1','2','3','4','5','6','7','8','9','10','11','12',]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content.startswith('!d10'):
+        randomlist = ['1','2','3','4','5','6','7','8','9','10',]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content.startswith('!d8'):
+        randomlist = ['1','2','3','4','5','6','7','8',]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content.startswith('!d6'):
+        randomlist = ['1','2','3','4','5','6',]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content.startswith('!d4'):
+        randomlist = ['1','2','3','4',]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+
+client.run('NTEyMDk2ODIzNzIxMzI4NjUw.Ds1BRA.8bCCKf1jP1g0ntOiZ5xlh9N-PX0')

@@ -44,8 +44,18 @@ async def on_message(message):
     if message.content.startswith('!d6'):
         randomlist = ['1','2','3','4','5','6',]
         await client.send_message(message.channel,(random.choice(randomlist)))
+
+
+     
+
+
+    if message.content == '!zane':
+        await client.send_message(message.channel,'hecka gay')
+
+
+
+    
     if message.content.startswith('!d4'):
         randomlist = ['1','2','3','4',]
         await client.send_message(message.channel,(random.choice(randomlist)))
-
 client.run('NTEyMDk2ODIzNzIxMzI4NjUw.Ds1BRA.8bCCKf1jP1g0ntOiZ5xlh9N-PX0')

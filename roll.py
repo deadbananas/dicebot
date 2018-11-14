@@ -49,7 +49,7 @@ async def on_message(message):
      
 
 
-    if message.content == '!zane':
+    if message.content == 'zane':
         await client.send_message(message.channel,'hecka gay')
 
 

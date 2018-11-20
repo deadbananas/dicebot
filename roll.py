@@ -20,8 +20,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if ('heck') in message.content:
-       await client.delete_message(message)
     if ('frick') in message.content:
        await client.delete_message(message)
     if message.content.startswith('!d20'):
@@ -44,7 +42,10 @@ async def on_message(message):
     if message.content.startswith('!d6'):
         randomlist = ['1','2','3','4','5','6',]
         await client.send_message(message.channel,(random.choice(randomlist)))
-
+    if message.content == '!bard':
+        await client.send_message(message.channel,'https://www.youtube.com/watch?v=aAeU2SrLlQM')
+    if message.content == '!dnd':
+        await client.send_message(message.channel,'"math"')
 
      
 
